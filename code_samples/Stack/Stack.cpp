@@ -1,7 +1,6 @@
 // Stack en C++
 
 #include <stdlib.h>
-
 #include <iostream>
 
 
