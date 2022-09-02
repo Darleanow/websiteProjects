@@ -31,20 +31,20 @@ class Queue {
 
   void enQueue(int element) {
     if (isFull()) {
-      cout << "Queue is full";
+      cout << "La queue est pleine";
     } else {
       if (front == -1) front = 0;
       rear++;
       items[rear] = element;
       cout << endl
-         << "Inserted " << element << endl;
+         << "Inséré " << element << endl;
     }
   }
 
   int deQueue() {
     int element;
     if (isEmpty()) {
-      cout << "Queue is empty" << endl;
+      cout << "La queue est vide" << endl;
       return (-1);
     } else {
       element = items[front];
@@ -56,7 +56,7 @@ class Queue {
         front++;
       }
       cout << endl
-         << "Deleted -> " << element << endl;
+         << "Supprimé -> " << element << endl;
       return (element);
     }
   }
@@ -66,16 +66,16 @@ class Queue {
     int i;
     if (isEmpty()) {
       cout << endl
-         << "Empty Queue" << endl;
+         << "Queue vide" << endl;
     } else {
       cout << endl
-         << "Front index-> " << front;
+         << "Index du premier élément-> " << front;
       cout << endl
          << "Items -> ";
       for (i = front; i <= rear; i++)
         cout << items[i] << "  ";
       cout << endl
-         << "Rear index-> " << rear << endl;
+         << "Index du dernier élément-> " << rear << endl;
     }
   }
 };
