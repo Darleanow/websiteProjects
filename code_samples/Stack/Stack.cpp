@@ -59,7 +59,7 @@ void pop(st * s) {
 
 // Affichage elems
 void printStack(st * s) {
-    printf("Stack: ");
+    std::cout << "Stack: ";
     for (int i = 0; i < size; i++) {
         std::cout << s -> items[i] << " ";
     }
@@ -80,7 +80,7 @@ int main() {
 
     printStack(s);
 
-    pop(s)
+    pop(s);
 
     std::cout << "\nAprès pop:\n";
     printStack(s);
